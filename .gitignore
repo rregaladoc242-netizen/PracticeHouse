@@ -1,0 +1,10 @@
+﻿/[Oo]bj/
+/[Bb]in/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+Thumbs.db
+Desktop.ini
+.BIN/
