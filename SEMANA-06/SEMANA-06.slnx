@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="CentroOdontologico/CentroOdontologico.csproj" />
+  <Project Path="Prestamo/Prestamo.csproj" Id="8ff26de9-ac74-4e9d-81cc-8e6546191ad6" />
 </Solution>
