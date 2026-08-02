@@ -1,0 +1,102 @@
+﻿<Window x:Class="FiltroNombres.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FiltroNombres"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Margin="40">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtCadena"
+                 Height="50"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 IsReadOnly="False"
+                 Text="Liliana Angelina Leticia Amanda Patricia Roxana Luana Laura Kiara Kimberly Syintia Cintia Cecilia Ana Lina Thalia Teresa Pierina"
+                 VerticalContentAlignment="Center"
+                 Padding="5"/>
+
+        <Button x:Name="btnListar"
+                Grid.Row="1"
+                Content="&lt;&lt;Listar&gt;&gt;"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Height="25"
+                Width="80"
+                Margin="85,10,0,10"
+                Click="btnListar_Click"/>
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox x:Name="lbxNombresListados"
+                     Margin="30,0,0,0"
+                     d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+            <StackPanel Grid.Column="2"
+                        Orientation="Vertical">
+
+                <TextBlock Text="Letra"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Margin="0,50,0,5"
+                           HorizontalAlignment="Center"/>
+
+                <TextBox x:Name="txtLetra"
+                         Margin="0,0,0,10"/>
+
+                <Button Content="&lt;&lt;Pasar&gt;&gt;"
+                        Click="btnPasar_Click"/>
+
+            </StackPanel>
+
+            <ListBox x:Name="lbxNombresFiltrados"
+                     Grid.Column="4"
+                     Margin="0,0,30,0"
+                     d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+        </Grid>
+
+        <Grid Grid.Row="3"
+              Margin="0,10,0,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="220"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="txtTotalNombres"
+                     Height="25"
+                     Grid.Column="1"
+                     Text="0"
+                     IsReadOnly="True"/>
+
+            <TextBox x:Name="txtTotalFiltrados"
+                     Height="25"
+                     Grid.Column="3"
+                     Text="0"
+                     IsReadOnly="True"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
