@@ -1,0 +1,14 @@
+﻿<Window x:Class="Imagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Imagenes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Margin="92,45,0,0" Width="100" Source="https://i.blogs.es/6f44dd/google-2015-1/450_1000.jpg"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="271,45,0,0" VerticalAlignment="Top" Width="100" Source="/Images/google_logo.png"/> 
+        <Image HorizontalAlignment="Left" Height="100" Margin="495,45,0,0" VerticalAlignment="Top" Width="100" Source="C:\Users\alexa\Downloads\logo_google.jpg"/>
+    </Grid>
+</Window>
